@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import {
+  HiMiniLink,
   HiOutlineCalendarDays,
   HiOutlineCog6Tooth,
   HiOutlineHome,
@@ -26,6 +27,7 @@ const StyledNavLink = styled(NavLink)`
     font-weight: 500;
     padding: 1.2rem 2.4rem;
     transition: all 0.5s;
+    border-radius: var(--border-radius-sm);
   }
 
   /* This works because react-router places the active class on the active NavLink */
@@ -35,7 +37,6 @@ const StyledNavLink = styled(NavLink)`
   &.active:visited {
     color: var(--color-grey-800);
     background-color: var(--color-grey-100);
-    border-radius: var(--border-radius-sm);
   }
 
   & svg {
@@ -89,6 +90,26 @@ function MainNav() {
           <StyledNavLink to="/settings">
             <HiOutlineCog6Tooth />
             <span>Settings</span>
+          </StyledNavLink>
+        </li>
+        <li>
+          <StyledNavLink
+            to="https://github.com/V1CTORHS1N"
+            target="_blank"
+            style={{ backgroundColor: "var(--color-indigo-100)" }}
+          >
+            <HiMiniLink />
+            <span>My Github</span>
+          </StyledNavLink>
+        </li>
+        <li>
+          <StyledNavLink
+            to="https://www.linkedin.com/in/weitao-xin-8889862a5/"
+            target="_blank"
+            style={{ backgroundColor: "var(--color-indigo-100)" }}
+          >
+            <HiMiniLink />
+            <span>My LinkedIn</span>
           </StyledNavLink>
         </li>
       </NavList>
