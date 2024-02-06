@@ -51,10 +51,13 @@ export async function createEditCabin(newCabin, id) {
 }
 
 export async function deleteCabin(id) {
-  const { error } = await supabase.from("cabins").delete().eq("id", id);
+  // Disabled for the demo
+  // const { error } = await supabase.from("cabins").delete().eq("id", id);
 
-  if (error) {
-    console.error(error);
-    throw new Error("Cabin could not be deleted");
-  }
+  // if (error) {
+  //   console.error(error);
+  //   throw new Error("Cabin could not be deleted");
+  // }
+
+  throw new Error("This feature is disabled for the demo");
 }

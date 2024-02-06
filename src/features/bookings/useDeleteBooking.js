@@ -10,8 +10,8 @@ function useDeleteBooking(bookingId) {
       toast.success(`Booking #${bookingId} successfully deleted`);
       queryClient.invalidateQueries({ queryKey: ["bookings"] });
     },
-    onError: () => {
-      toast.error(`There was an error while deleting booking #${bookingId}`);
+    onError: (error) => {
+      toast.error(error.message);
     },
   });
 
