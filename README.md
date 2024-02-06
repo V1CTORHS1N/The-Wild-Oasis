@@ -26,7 +26,7 @@ A web application that provides hotel administrators:
 
 ## How to Run
 ### 1. Interative Demo via Netlify
-- Visit [Interative Demo](the-wild-oasis-vh.netlify.app)
+- Visit [Interative Demo](https://the-wild-oasis-vh.netlify.app)
 
 ### 2. Try it on your local machine
 #### 2.0. Prerequisites
