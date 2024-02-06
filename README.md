@@ -25,8 +25,8 @@ A web application that provides hotel administrators:
 - Dark Mode
 
 ## How to Run
-### 1. Interative Demo via Vercel
-- Visit [Interative Demo](https://the-wild-oasis-eight-gold.vercel.app)
+### 1. Interative Demo via Netlify
+- Visit [Interative Demo](the-wild-oasis-vh.netlify.app)
 
 ### 2. Try it on your local machine
 #### 2.0. Prerequisites
